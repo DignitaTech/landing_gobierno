@@ -1,0 +1,122 @@
+:root{
+    /*Estilos de texto*/
+    --h1-weight: 900;
+    --h1-size: 50px;
+
+    --h2-weight:700;
+    --h2-size: 64px;
+
+    --h3-weight: 700;
+    --h3-size:32px;
+
+    --p-weight: 400;
+    --p-size: 24px;
+
+    --h1-weight-res: 900;
+    --h1-size-res: 40px;
+
+    --h2-weight-res: 700;
+    --h2-size-res: 27.2px;
+
+    --h3-weight-res: 600;
+    --h3-size-res: 20px;
+
+    --p-weight-res: 400;
+    --p-size-res: 16px;
+
+    /*Estilos de color*/
+    --primerColor :#48B774;
+    --segundoColor :#FF8345;
+    --tercerColor : #789640;
+    --cuartoColor: #343434;
+    --quintoColor:#989898;
+    /*--degradado: radial-gradient(159.74% 49.64% at 49.02% 50.36%, #90B0AF 0%, #F9F1DE 100%);  */
+    --blanco: #FFFFFF;
+    --negro: #000000;
+
+    /* otro */
+    --colum1: calc(var(--colum1-2) - 20px);
+    --colum1-2: calc(100vw/8);
+
+}
+
+/*Estilos universales*/
+* {
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--p-size);
+    font-weight: var(--p-weight);
+
+}  
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--blanco);    
+}
+h1 {
+    font-size: var(--h1-size);
+    font-weight: var(--h1-weight);
+}
+h2 {
+    font-size: var(--h2-size);
+    font-weight: var(--h2-weight);
+    text-align: center;
+}
+h3 {
+    font-size: var(--h3-size);
+    font-weight: var(--h3-weight);
+}
+section {
+    padding: clamp(70px, 6.94vw, 120px) var(--colum1); /* 100px */
+    padding-bottom: clamp(90px, 8.33vw, 140px); /* 120px */
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/*Seccion 001*/
+.seccion001{
+    padding: 0;
+    display: grid;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    background-image: url("/img/portadaFondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.seccion001 h1{
+    color: var(--blanco);
+    line-height: 50px;
+}
+.seccion001 p{
+    color: var(--blanco);
+    margin-bottom: -2px;
+}
+.seccion001 .colum{
+    padding: clamp(70px, 6.94vw, 120px) 0 clamp(90px, 8.33vw, 140px) var(--colum1);
+}
+.seccion001 picture{
+    display: flex;
+    justify-content: end;
+}
+.seccion001 a{
+    display: inline-block;
+    background-color: var(--segundoColor);
+    padding: 10px 30px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: clamp(20px, 2.78vw,50px);
+    color: var(--cuartoColor);
+}
+.seccion001 img{
+    position: absolute;
+    padding-top: 80px;
+    padding-right: 300px;
+    height: 700px;
+    object-fit: contain;
+}

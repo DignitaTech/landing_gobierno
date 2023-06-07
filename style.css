@@ -26,7 +26,7 @@
 
     /*Estilos de color*/
     --primerColor :#48B774;
-    --segundoColor :#FF8345;
+    --segundoColor :#EB4D23;
     --tercerColor : #789640;
     --cuartoColor: #343434;
     --quintoColor:#989898;
@@ -76,11 +76,8 @@ a {
     text-decoration: none;
     color: #000;
 }
-
-
 /*Seccion 001*/
-.seccion001{
-    
+.seccion001{    
     padding: 0;
     display: grid;
     padding: 0;
@@ -100,7 +97,7 @@ a {
     margin-bottom: -2px;
 }
 .seccion001 .colum{
-    padding: clamp(70px, 6.94vw, 120px) 0 clamp(90px, 8.33vw, 140px) var(--colum1);
+    padding: clamp(70px, 6.94vw, 120px) 0 clamp(90px, 8.33vw, 140px) var(--colum1);    
 }
 .seccion001 picture{
     display: flex;
@@ -113,7 +110,7 @@ a {
     border-radius: 15px;
     text-align: center;
     margin-top: clamp(20px, 2.78vw,50px);
-    color: var(--cuartoColor);
+    color: var(--blanco);
 }
 .seccion001 img{    
     position: absolute;    
@@ -151,12 +148,13 @@ a {
 
 /*Organigrama*/
 .organigrama {
-    display: flex;
+    display:flexbox;
     background-color: var(--cuartoColor);
     justify-content: center;
 }
 .organigrama h2{
     color: var(--blanco);
+    padding-bottom: 60px;
 }
 
 /*paso*/
@@ -165,4 +163,40 @@ a {
     height: clamp(100px, 3.47vw,200px);
     border-radius: 50% 50% 0 0;
     background-color: var(--cuartoColor);
+}
+
+/*Servicios de gobierno*/
+.serviciosGobierno{
+    background-color: var(--blanco);
+}
+.serviciosGobierno h2{
+    color: var(--negro);
+    padding-bottom: 60px;
+}
+.serviciosGobierno span{
+    color: var(--segundoColor);
+    font-size: var(--h2-size);
+    font-weight: var(--h2-weight);
+}
+.serviciosGobierno .contenedor{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.serviciosGobierno .columna01{
+    display: grid;
+    background-color: #343434;
+    justify-content: center;
+}
+.serviciosGobierno > .columna02{
+    padding: 0 clamp(10px, 1.74vw, 30px);
+    display: flex;
+    align-items: center;
+    max-width: 650px;
+}
+.serviciosGobierno h3{
+    text-align: center;
+    color: var(--tercerColor);
+}
+.serviciosGobierno img{
+    align-items: center;
 }
